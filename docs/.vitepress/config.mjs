@@ -9,7 +9,7 @@ export default defineConfig({
   lang: 'zh-CN',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
+    nav: [  
       { text: 'Home', link: '/' }
     ],
 
@@ -18,8 +18,8 @@ export default defineConfig({
         text: "导航",
         items: set_sidebar("/docs/src"),
         collapsible: true,
-        collapsed: false
-      }
+        collapsed: false,
+      },
     ],
 
 
@@ -27,6 +27,20 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
 
+    // 文章翻页
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+
+    // 移动端 - 外观
+    darkModeSwitchLabel: '外观',
+
+    // 移动端 - 返回顶部
+    returnToTopLabel: '返回顶部',
+
+    // 移动端 - menu
+    sidebarMenuLabel: '菜单',
     aside: 'right',
     // 设置搜索框的样式
     search: {
@@ -48,6 +62,11 @@ export default defineConfig({
         },
       },
     },
+    outline: {
+      label: '目录',
+      level: [2, 3],
+      collapsed: true,
+    }
   },
   // config of deploy to github
   base: '/blog/'
