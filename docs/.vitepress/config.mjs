@@ -6,6 +6,7 @@ export default defineConfig({
   title: "CSP",
   description: "A document of csp",
   srcDir: './src',
+  lang: 'zh-CN',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
