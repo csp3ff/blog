@@ -69,5 +69,5 @@ export default defineConfig({
     }
   },
   // config of deploy to github
-  base: '/blog/'
+  base: '/'
 })
